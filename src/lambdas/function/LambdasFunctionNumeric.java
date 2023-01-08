@@ -9,24 +9,35 @@ public class LambdasFunctionNumeric {
 	
 	public static void main(String[] args) {
 		
+
+		List<String> listadoProductos = 
+				new ArrayList<String>(Arrays.asList("Tomate","Zapallo","Pollo"));
 		
-		List<String> listadoProductos = new ArrayList<String>(Arrays.asList("Tomate","Zapallo","Pollo"));
 		
-		
-		Function<List<String>,Double> calcularPrecio = (List<String> listado)->
+		Function<List<String>, Double> calcularPrecio 
+		= (List<String> listadoInput) -> 
 		{
-		listado.addAll(Arrays.asList("Calabaza","Papas","Pure"));
-		double precio=0;	
-		for(String elemento : listadoProductos) {
-			if(elemento == "Pollo") {precio+=500;}
-			else if(elemento == "Tomate") {precio+=100;}
-			else if(elemento == "Papas") {precio+=50;}
+			listadoInput.addAll(Arrays.asList("Calabaza","Papas","Pure"));
+			
+			double precio=0;
+			
+			for(String producto : listadoProductos) {
+				
+				System.out.println(producto);
+				if (producto == "Pollo") {precio+=1500;}
+				else if (producto == "Tomate") {precio+=900;}
+				else if (producto == "Papas") {precio+=500;}
 			}
-		return precio;
+			
+			
+			return precio;
 		};
+				
+		
+		
+		System.out.println(listadoProductos);
 		
 		System.out.println(calcularPrecio.apply(listadoProductos));
-		
-		
 	}
+
 }
