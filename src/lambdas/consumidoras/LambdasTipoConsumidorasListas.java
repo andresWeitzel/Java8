@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class LambdasTipoConsumidorasConListas {
+public class LambdasTipoConsumidorasListas {
 	
 	public static void main(String[] args) {
 		
@@ -29,13 +29,7 @@ public class LambdasTipoConsumidorasConListas {
 		//Invocamos el consumer
 		listaNumeros.accept(numeros);
 
-		
-		//==============================================
-		System.out.println("\n===== LAMBDA CONSUMER SIN DECLARACION ====");
-		
-		//No declaramos la funcion de tipo consumer, solo la usamos		
-		numeros.stream().forEach(numero->System.out.println(numero));
-				
+	
 		
 	}
 

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 
-public class LambdasFunctionNumeric {
+public class LambdasFunctionNumericCompleted {
 	
 	public static void main(String[] args) {
 		

@@ -1,6 +1,6 @@
 package lambdas.consumidoras;
 
-import java.util.List;
+
 import java.util.function.Consumer;
 
 public class LambdasTipoConsumidoras {
@@ -16,7 +16,7 @@ public class LambdasTipoConsumidoras {
 		
 		
 		//SI TRABAJAMOS CON ESTRUCT DE DATOS COMO LAS LISTAS, NO ES 
-		//NECESARIO DECLARAR EL TIPO DE ÑAMBDA, SOLAMENTE LA USAMOS
+		//NECESARIO DECLARAR EL TIPO DE LAMBDA, SOLAMENTE LA IMPLEMENTAMOS
 		
 		System.out.println("\n--- Imprimir Número Entero---");
 		
@@ -44,8 +44,7 @@ public class LambdasTipoConsumidoras {
 		
 		texto.accept("La casa de Papel");
 		
-		
-		
+
 
 		
 		
